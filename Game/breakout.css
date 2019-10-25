@@ -1,0 +1,80 @@
+body 
+{
+     font: 12pt Arial, Helvetica, sans-serif;
+     padding: 0;
+     margin: 0;
+    background: url(images/paving.jpg);
+}
+
+#breakout {
+  position: relative;
+}
+
+#canvas {
+  -webkit-transform: translateZ(0);
+   opacity: 0.9;
+}
+
+#levels {
+     position: absolute;
+         left: 10px;
+          top: 10px;
+        color: #0095DD;
+    line-height: 20px;
+}
+
+#levels #next  { position: absolute; left:190px           }
+#levels #prev  { position: absolute; top: 14px;left:190px  }
+#levels #label { position: absolute; top: 4px;left:210px }
+#levels #level 
+{ 
+    font-size: 14pt;
+    position: absolute;
+    top: 4px;
+    left:250px;
+    font-weight: bold;
+    color: #0095DD; 
+}
+
+#levels img                 { cursor: pointer; }
+#levels img.disabled        { opacity: 0.3; cursor: default; }
+#levels img:active          { margin-top: 1px; margin-left: 1px; }
+#levels img.disabled:active { margin-top: 0; margin-left: 0; }
+
+#controls {
+  position: absolute;
+  left: 450px;
+  top: 10px;
+  color:#0095DD;
+}
+#controls input,#controls label 
+{
+    vertical-align: middle; 
+}
+#instructions {
+  background: #DDD;
+      border: 2px solid #333;
+      color: #0095DD;
+     padding: 0.5em 1em;
+     white-space: nowrap;
+     text-align: center;
+     width: 18em;
+      margin: 0 auto;
+    position: relative;
+         top: -16em;
+}
+#instructions b { color: black; }
+
+#instructions       .keyboard { display: block; }
+#instructions       .touch    { display: none;  }
+#instructions.touch .keyboard { display: none;  }
+#instructions.touch .touch    { display: block; }
+
+.unsupported {
+            border: 1px solid yellow;
+            color: black;
+            background-color: #FFFFAD;
+            padding: 2em;
+            margin: 5em;
+            display: inline-block;
+}
