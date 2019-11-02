@@ -1,68 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-        <meta charset="utf-8" />
-        <title>Breakout Game</title>
-<style>
-.container {
-  position: relative;
-  width: 100%;
-  height: 640px;
-}
+  <head>
+          <meta charset="utf-8" />
+          <title>Breakout Game</title>
+          <link href="intro.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
 
-.container img {
-  width: 100%;
-  height: 100%
-}
+          <div class="container">
+            <img src="breakout-porto-escape.jpg" alt="image not found" >
+            <button class="btn" onclick="move()">Start Game</button>
+          </div>
 
-.container .btn {
-  position: absolute;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, -80%);
-  background-color: #f1f1f1;
-  color: black;
-  font-size: 16px;
-  padding: 50px 50px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-  display: inline-block;
-  margin-bottom: 0;
-  text-align: center;
-  text-transform: uppercase;
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: none;
-  whitespace: nowrap;
-  font-size: 1.4rem;
-  border-radius: 3px;
-  border: 1px solid transparent;
-  text-decoration: none;
-  user-select: none;
-  background-color:  #adad85;
-}
+          <script type="text/javascript">
+            
+          function move() {
+            window.location.assign("level1.html");
+          }
 
-.container .btn:hover {
-  background-color: black;
-  color: white;
-}
-</style>
-</head>
-<body>
-
-<div class="container">
-  <img src="breakout-porto-escape.jpg" alt="image not found" >
-  <button class="btn" onclick="move()">Start Game</button>
-</div>
-
-<script type="text/javascript">
-  
-function move() {
-   window.location.assign("level1.html");
-}
-
-</script>
-</body>
+          </script>
+  </body>
 </html>
