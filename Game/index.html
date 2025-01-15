@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-          <meta charset="utf-8" />
-          <title>Breakout Game</title>
-          <link href="intro.css" type="text/css" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout Game</title>
+    <link href="intro.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
+    <div class="container">
+      <img src="breakout-background.jpg" alt="image not found" />
+      <button class="btn" onclick="move()">Start Game</button>
+    </div>
 
-          <div class="container">
-            <img src="breakout-porto-escape.jpg" alt="image not found" >
-            <button class="btn" onclick="move()">Start Game</button>
-          </div>
-
-          <script type="text/javascript">
-            
-          function move() {
-            window.location.assign("level1.html");
-          }
-
-          </script>
+    <script type="text/javascript">
+      function move() {
+        window.location.assign("level1.html");
+      }
+    </script>
   </body>
 </html>

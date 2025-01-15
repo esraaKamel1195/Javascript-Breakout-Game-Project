@@ -1,35 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Breakout Game</title>
-        <link href="breakout.css" type="text/css" rel="stylesheet"/>
-        <style>
-            * { padding: 0; margin: 0; }
-            canvas { background: #eee; display: block; margin: 0 auto;opacity: 0.9 }
-        </style>
-    </head>
-    <body onkeydown="startGame(event)">
-     <div id="breakout">
-         <canvas id="myCanvas" width="990" height="600"></canvas>
-         <div id="levels">
-              <img id="next" class="disabled" src="images/up.png"   title="next level">
-              <img id="prev" class="disabled" src="images/down.png" title="previous level">
-              <span id="label">level:</span><span id="level"></span>
-         </div>
-         <div id="controls">
-              <input id='sound' type='checkbox' checked/>
-              <label for='sound'>sound</label>
-         </div>
-         <div id="instructions" style=''>
-          <div class='keyboard'>
-            <b>space</b> to start<br>
-            <b>left/right</b> to move paddle<br>
-            <b>up/down</b> to change level
-          </div>
-          
-         </div>
-     </div>
-     <script src="level1.js"> </script>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout Game</title>
+    <link href="breakout.css" type="text/css" rel="stylesheet" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      canvas {
+        background: #eee;
+        display: block;
+        margin: 0 auto;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body onkeydown="startGame(event)">
+    <div id="breakout">
+      <canvas id="myCanvas" width="990" height="600"></canvas>
+      <div id="levels">
+        <img
+          id="next"
+          class="disabled"
+          src="images/up.png"
+          title="next level"
+        />
+        <img
+          id="prev"
+          class="disabled"
+          src="images/down.png"
+          title="previous level"
+        />
+        <span id="label">level:</span><span id="level"></span>
+      </div>
+      <div id="controls">
+        <input id="sound" type="checkbox" checked />
+        <label for="sound">sound</label>
+      </div>
+      <div id="instructions">
+        <div class="keyboard">
+          <b>space</b> to start<br />
+          <b>left/right</b> to move paddle<br />
+          <b>up/down</b> to change level
+        </div>
+      </div>
+    </div>
+    <script src="level1.js"></script>
+  </body>
 </html>
