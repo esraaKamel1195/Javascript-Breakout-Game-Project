@@ -291,7 +291,7 @@ function draw() {
         alert("GAME OVER");
         clearInterval(delete_timer);
         setTimeout(function () {
-          document.location.replace("intro.html");
+          document.location.replace("index.html");
         }, 3000);
       } else {
         ball1_is_live = true;
@@ -325,7 +325,7 @@ function draw() {
       alert("GAME OVER");
       clearInterval(delete_timer);
       setTimeout(function () {
-        document.location.replace("intro.html");
+        document.location.replace("index.html");
       }, 3000);
     } else {
       if (sound_checkbox.checked == true) {
