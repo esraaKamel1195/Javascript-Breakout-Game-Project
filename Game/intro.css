@@ -11,33 +11,29 @@
 
 .container .btn {
   position: absolute;
-  top: 95%;
-  left: 50%;
-  color: black;
-  font-size: 16px;
-  padding: 50px 50px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+  top: 61%;
+  left: 14%;
+  padding: 20px 50px;
   display: inline-block;
   margin-bottom: 0;
   vertical-align: middle;
   cursor: pointer;
-  background-image: none;
-  /* whitespace: nowrap; */
-  font-size: 1.4rem;
-  border-radius: 3px;
   border: 1px solid transparent;
+  border-radius: 5px;
   transform: translate(-50%, -80%);
+  font-size: 1.6rem;
+  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   -webkit-user-select: none;
   user-select: none;
-  background-color: #adad85;
+  color: #7a0205;
+  background-image: none;
+  background-color: #ffffff;
 }
 
 .container .btn:hover {
-  background-color: black;
-  color: white;
+  background-color: #fed02a;
+  color: #351865;
 }
