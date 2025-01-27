@@ -40,7 +40,7 @@ for (var c = 0; c < brickColumnCount; c++) {
   colors[c] = [];
   for (var r = 0; r < brickRowCount; r++) {
     colors[c][r] = {
-      color: "#" + (((1 << 24) * Math.random()) | 0).toString(16),
+      color: "#" + (((1 << 24) * Math.random()) | 0).toString(18),
     };
   }
 }
@@ -129,7 +129,7 @@ function mouseMoveHandler(e) {
 function drawBall() {
   ctx.beginPath();
   ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
-  ctx.fillStyle = "#0095DD";
+  ctx.fillStyle = "#351865";
   ctx.fill();
   ctx.closePath();
 }
@@ -137,7 +137,7 @@ function drawBall() {
 function drawPaddle() {
   ctx.beginPath();
   ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
-  ctx.fillStyle = "#0095DD";
+  ctx.fillStyle = "#351865";
   ctx.fill();
   ctx.closePath();
 }
@@ -232,20 +232,20 @@ function collisionDetection() {
 }
 
 function drawScore() {
-  ctx.font = "16px Arial";
-  ctx.fillStyle = "#0095DD";
+  ctx.font = "18px Arial";
+  ctx.fillStyle = "#351865";
   ctx.fillText("Score: " + score, 870, 27);
 }
 
 function drawLives() {
-  ctx.font = "16px Arial";
-  ctx.fillStyle = "#0095DD";
+  ctx.font = "18px Arial";
+  ctx.fillStyle = "#351865";
   ctx.fillText("Lives: " + lives, 700, 27);
 }
 
 function drawTimer() {
-  ctx.font = "16px Arial";
-  ctx.fillStyle = "#0095DD";
+  ctx.font = "18px Arial";
+  ctx.fillStyle = "#351865";
   ctx.fillText("Timer: " + parseInt(timer), 500, 27);
 }
 
@@ -356,7 +356,7 @@ function begining() {
   drawBricks();
   ctx.beginPath();
   ctx.arc(x, y + 10, ballRadius, 0, Math.PI * 2);
-  ctx.fillStyle = "#0095DD";
+  ctx.fillStyle = "#351865";
   ctx.fill();
   ctx.closePath();
   drawPaddle();
