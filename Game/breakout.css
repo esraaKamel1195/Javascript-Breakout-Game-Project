@@ -93,7 +93,7 @@ canvas {
 
 #instructions {
   background: #ddd;
-  border: 2px solid #333;
+  border: 2px solid #351865;
   color: #351865;
   padding: 0.5em 1em;
   white-space: nowrap;
@@ -105,7 +105,7 @@ canvas {
 }
 
 #instructions b {
-  color: black;
+  color: #351865;
 }
 
 #instructions .keyboard {
