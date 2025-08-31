@@ -40,7 +40,14 @@ for (var c = 0; c < brickColumnCount; c++) {
     bricks[c][r] = { x: 0, y: 0, status: 1 };
   }
 }
+
 var colors = [];
+
+console.log(((1 << 24)* Math.random()) | 0);
+console.log(canvas.nextElementSibling);
+console.log(canvas.previousElementSibling);
+console.log(canvas.nextSibling);
+console.log(canvas.previousSibling);
 
 for (var c = 0; c < brickColumnCount; c++) {
   colors[c] = [];
@@ -77,14 +84,12 @@ function keyDownHandler(e) {
     rightPressed = true;
     if (game_is_fire == false && paddleX < canvas.width - paddleWidth) {
       x += 8;
-
       paddleX += 8;
     }
   } else if (e.key == "Left" || e.key == "ArrowLeft") {
     leftPressed = true;
     if (game_is_fire == false && paddleX > 0) {
       x -= 8;
-
       paddleX -= 8;
     }
   }
